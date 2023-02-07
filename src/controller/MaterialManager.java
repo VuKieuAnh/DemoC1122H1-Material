@@ -1,7 +1,9 @@
 package controller;
 
 import model.Material;
+import storage.ReadWriteFile;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,10 +27,20 @@ public class MaterialManager {
     public void addNewMaterial(Material material){
 //        khong chua hoat dong nhap xuat du lieu
         materialList.add(material);
+        try {
+            ReadWriteFile.writeFile(materialList);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void deleteById(int id){
         materialList.remove(id);
+        try {
+            ReadWriteFile.writeFile(materialList);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public double getDifference(){
