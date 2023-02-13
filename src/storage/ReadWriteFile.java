@@ -7,7 +7,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadWriteFile {
-    public static boolean writeFile(List<Material> materials) throws IOException {
+
+    private ReadWriteFile() {
+    }
+
+    private static ReadWriteFile instance;
+
+    public static ReadWriteFile getInstance(){
+        if (instance==null) instance = new ReadWriteFile();
+        return instance;
+    }
+
+    public boolean writeFile(List<Material> materials) throws IOException {
         File file = new File("material.dat");
         OutputStream os = new FileOutputStream(file);
         ObjectOutputStream fos = new ObjectOutputStream(os);
@@ -17,7 +28,7 @@ public class ReadWriteFile {
         return true;
     }
 
-    public static List<Material> readFile()  {
+    public List<Material> readFile()  {
         File file = new File("material.dat");
         InputStream inputStream = null;
         try {

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Client {
-    public static List<Material> materials = ReadWriteFile.readFile();
+    public static List<Material> materials = ReadWriteFile.getInstance().readFile();
 
 //    static {
 //        try {
@@ -27,10 +27,12 @@ public class Client {
     public static MaterialManager ka = new MaterialManager(materials);
 
     public static void main(String[] args) {
-//        System.out.println(materials);
-//        ka.addNewMaterial(new Bot());
-//        System.out.println(materials);
-        System.out.println(materials);
+        TongGiamDoc w1 = TongGiamDoc.getInstance();
+        TongGiamDoc w2 = TongGiamDoc.getInstance();
+        w2.duyetLuong();
+        w1.duyetLuong();
+        System.out.println(w1.hashCode());
+        System.out.println(w2.hashCode());
     }
 
     public static int giaithua1(int n){
