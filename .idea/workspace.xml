@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca90fcc9-f60b-4a03-bef2-73e4b6511ed5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/TongGiamDoc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/ReadWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/ReadWriteFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Client.java" afterDir="false" />
@@ -86,7 +85,8 @@
       <workItem from="1675392643009" duration="1882000" />
       <workItem from="1675759186268" duration="1319000" />
       <workItem from="1675760519151" duration="864000" />
-      <workItem from="1676270845134" duration="2012000" />
+      <workItem from="1676270845134" duration="2721000" />
+      <workItem from="1676443251435" duration="1375000" />
     </task>
     <servers />
   </component>
@@ -109,12 +109,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/views/Client.java</url>
-          <line>46</line>
+          <line>49</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/views/Client.java</url>
-          <line>47</line>
+          <line>50</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

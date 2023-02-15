@@ -4,7 +4,9 @@ import controller.MaterialManager;
 import model.Bot;
 import model.Material;
 import model.Meat;
+import storage.IReadWriteFIle;
 import storage.ReadWriteFile;
+import storage.ReadWriteFileExcel;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +14,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Client {
-    public static List<Material> materials = ReadWriteFile.getInstance().readFile();
+    public static IReadWriteFIle readWriteFIle = new ReadWriteFileExcel();
+    public static List<Material> materials = readWriteFIle.readFile();
 
 //    static {
 //        try {

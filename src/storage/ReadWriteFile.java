@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReadWriteFile {
+public class ReadWriteFile implements IReadWriteFIle {
 
     private ReadWriteFile() {
     }
